@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Confirm Deletion.
+{% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'todo_tasks/delete.css' %}">
+{% endblock css_files %}
+
+{% block content %}
+<a class="back" href="{% url "intro"%}">Go Back</a>
+<form method= "POST">
+    {% csrf_token %}
+    <p class="confirm">Are Your sure you want to delete this task?</p>
+    <input class="confirm" type="submit" value="Delete"/>
+</form>
+{% endblock content %}
+
+
+

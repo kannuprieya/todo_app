@@ -1,0 +1,17 @@
+.back{
+    color: white;
+    text-decoration: none;
+    background-color:  #FF7F50;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+input{
+    background-color:  #A0D299;
+    padding: 0.5em 1em;
+    margin-left: 1rem;
+    border-radius: 1em;
+    border: none;
+    margin-left: 0;
+    cursor: pointer;
+}
